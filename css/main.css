@@ -4,6 +4,7 @@ html {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +14,40 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
+    
+}
+
+.backArrow {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    background-color: #08FDD8;
+    border-radius: 50%;
+    border: 0px;
+    font-size: 30px;
+    padding-top: 8px;
+    color: #FDFDFD;
+    width: 50px;
+    height: 50px;
+    animation: arrowAnimation 0.5s infinite alternate;
+    text-decoration: none;
+}
+
+
+
+@keyframes arrowAnimation {
+    0%, 30% {
+        width: 55px;
+        height: 55px;
+        padding-top: 9px;
+        font-size: 35px;
+    }
+    70%, 100% {
+        width: 50px;
+        height: 50px;
+        padding-top: 9px;
+        font-size: 30px;
+    }
 }
 
 .navbar {
@@ -72,6 +107,11 @@ a:active {
     background-color: #08FDD8;
     border: none;
 }
+
+
+
+
+
 
 .nav {
     position: sticky;
